@@ -43,6 +43,7 @@ dependencies {
     compile "ch.qos.logback:logback-classic:$logback_version"
     compile "io.ktor:ktor-server-core:$ktor_version"
     compile "io.ktor:ktor-server-host-common:$ktor_version"
+    implementation "io.ktor:ktor-freemarker:$ktor_version"
     testCompile "io.ktor:ktor-server-tests:$ktor_version"
     providedCompile "com.google.appengine:appengine:$appengine_version"
 }
