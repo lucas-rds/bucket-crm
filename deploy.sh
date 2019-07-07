@@ -1,5 +1,7 @@
 #!/bin/bash
 
+git update-index --chmod=+x gradlew
+
 # Decrypt config & key files
 openssl aes-256-cbc -K $encrypted_1437fc144fa9_key -iv $encrypted_1437fc144fa9_iv -in client-secret.json.enc -out client-secret.json -d
 
