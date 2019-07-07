@@ -56,3 +56,10 @@ dependencies {
 testlogger {
     theme 'mocha'
 }
+
+appengine {
+    deploy {
+        stopPreviousVersion = true
+        promote = true
+    }
+}
