@@ -22,7 +22,7 @@ cache:
 
 deploy:
   provider: script
-  script: ./gradlew appengineDeploy
+  script: chmod +x gradlew && chmod +x ./deploy.sh && ./deploy.sh
   on:
     branch: master
 
