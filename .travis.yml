@@ -10,7 +10,16 @@ cache:
   directories:
   - "$HOME/.gradle/caches/"
   - "$HOME/.gradle/wrapper/"
+
 deploy:
-  provider: gae
-  keyfile: client-secret.json
-  project: k-social-crm
+  provider: script
+  script: bash deploy.sh
+  on:
+    branch: master
+
+# Discovery: GAE deploy provider dont work well with java applications as it needs to use app.yml
+# and java apps deploys with appengine-web.xml. The workaround is working with scripts
+#deploy:
+#  provider: gae
+#  keyfile: client-secret.json
+#  project: k-social-crm
