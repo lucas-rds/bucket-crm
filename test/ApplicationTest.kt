@@ -8,10 +8,9 @@ import main.kotlin.module
 class ApplicationTest {
     @Test
     fun testRoot() {
-        withTestApplication({ module(testing = true) }) {
-            handleRequest(HttpMethod.Get, "/").apply {
+        withTestApplication({ module() }) {
+            with(handleRequest(HttpMethod.Get, "/")) {
                 assertEquals(HttpStatusCode.OK, response.status())
-                assertEquals("HELLO WORLD!", response.content)
             }
         }
     }
