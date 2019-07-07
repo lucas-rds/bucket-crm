@@ -16,7 +16,7 @@ before_script:
 
 deploy:
   provider: script
-  script: chmod +x gradlew && chmod +x ./deploy.sh && deploy.sh
+  script: chmod +x gradlew && chmod +x ./deploy.sh && ./deploy.sh
   on:
     branch: master
 
