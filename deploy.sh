@@ -7,3 +7,4 @@
 # gcloud auth activate-service-account travis-crm@k-social-crm.iam.gserviceaccount.com --key-file=client-secret.json --project=k-social-crm
 
 # Run Gradle deployment task
+./gradlew appengineDeploy
