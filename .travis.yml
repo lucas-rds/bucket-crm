@@ -1,6 +1,6 @@
 language: java
 before_install:
-- openssl aes-256-cbc -K $encrypted_a6e0fdae3b9f_key -iv $encrypted_a6e0fdae3b9f_iv
+- openssl aes-256-cbc -K $encrypted_1437fc144fa9_key -iv $encrypted_1437fc144fa9_iv
   -in client-secret.json.enc -out client-secret.json -d
 - chmod +x gradlew
 before_cache:
